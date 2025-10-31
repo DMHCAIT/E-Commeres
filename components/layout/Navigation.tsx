@@ -224,8 +224,8 @@ export default function Navigation() {
               </button>
               
               {activeDropdown === 'solutions' && (
-                <div className="absolute top-full left-0 mt-3 w-80 bg-white/95 backdrop-blur-lg rounded-2xl shadow-2xl border border-gray-100 p-8 z-50">
-                  <div className="grid grid-cols-1 gap-6">
+                <div className="absolute top-full left-0 mt-3 w-[1000px] bg-white/95 backdrop-blur-lg rounded-2xl shadow-2xl border border-gray-100 p-8 z-50">
+                  <div className="grid grid-cols-3 gap-8">
                     <div>
                       <h3 className="text-xs font-semibold text-gray-500 uppercase tracking-wide mb-3">MANAGEMENT</h3>
                       <div className="space-y-2">
