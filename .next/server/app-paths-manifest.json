@@ -1,4 +1,27 @@
 {
+  "/_not-found/page": "app/_not-found/page.js",
+  "/analytics/page": "app/analytics/page.js",
+  "/automation/ai-suggestions/page": "app/automation/ai-suggestions/page.js",
+  "/automation/integrations/hrms/page": "app/automation/integrations/hrms/page.js",
+  "/automation/builder/page": "app/automation/builder/page.js",
   "/automation/page": "app/automation/page.js",
-  "/page": "app/page.js"
+  "/design-studio/page": "app/design-studio/page.js",
+  "/automation/integrations/website/page": "app/automation/integrations/website/page.js",
+  "/automation/integrations/crm/page": "app/automation/integrations/crm/page.js",
+  "/hr-software/page": "app/hr-software/page.js",
+  "/ecommerce/page": "app/ecommerce/page.js",
+  "/hr-solutions/page": "app/hr-solutions/page.js",
+  "/learning-platform/page": "app/learning-platform/page.js",
+  "/lms/page": "app/lms/page.js",
+  "/login/page": "app/login/page.js",
+  "/open-pro-template/page": "app/open-pro-template/page.js",
+  "/editor/page": "app/editor/page.js",
+  "/marketing/page": "app/marketing/page.js",
+  "/page": "app/page.js",
+  "/templates/page": "app/templates/page.js",
+  "/register/page": "app/register/page.js",
+  "/templates/ecommerce-preview/page": "app/templates/ecommerce-preview/page.js",
+  "/test-editor/page": "app/test-editor/page.js",
+  "/dashboard/[websiteId]/domains/page": "app/dashboard/[websiteId]/domains/page.js",
+  "/dashboard/page": "app/dashboard/page.js"
 }

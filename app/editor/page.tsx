@@ -1,7 +1,7 @@
 'use client';
 
 import { Editor, Frame, Element, useEditor } from '@craftjs/core';
-import { useState, useEffect } from 'react';
+import { useState, useEffect, Suspense } from 'react';
 import { useSearchParams, useRouter } from 'next/navigation';
 import { Toolbox } from '@/components/editor/Toolbox';
 import { SettingsPanel } from '@/components/editor/SettingsPanel';
@@ -118,7 +118,7 @@ function EditorToolbar({ websiteId, slug, onBack }: { websiteId?: string; slug?:
   );
 }
 
-export default function EditorPage(): JSX.Element {
+function EditorContent(): JSX.Element {
   const { user } = useAuth();
   const searchParams = useSearchParams();
   const router = useRouter();
@@ -282,5 +282,13 @@ function EditorActions({ websiteId, slug }: { websiteId?: string; slug?: string 
         <span>{saved ? 'Saved!' : saving ? 'Saving...' : 'Save'}</span>
       </button>
     </div>
+  );
+}
+
+export default function EditorPage(): JSX.Element {
+  return (
+    <Suspense fallback={<div className="flex items-center justify-center h-screen">Loading editor...</div>}>
+      <EditorContent />
+    </Suspense>
   );
 }
